@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dice Roller (Java)</string>
+    <string name="rollbutton">Roll</string>
+    <string name="rolltext"></string>
+    <string name="diceOne">dice</string>
+    <string name="diceTwo">dice2</string>
+    <string name="hint">Hint</string>
+    <string name="you_have_rolled_the_lucky_number">You have rolled the lucky number!</string>
+    <string name="luckyRollText">You have rolled the lucky number!</string>
+</resources>

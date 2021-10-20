@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/rollButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:text="@string/rollbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rollText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/rolltext"
+        app:layout_constraintBottom_toTopOf="@+id/rollButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="rollText" />
+
+    <ImageView
+        android:id="@+id/diceOneImage"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="87dp"
+        android:contentDescription="@string/diceOne"
+        app:layout_constraintBottom_toTopOf="@+id/rollText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dice_1"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/diceTwoImage"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="87dp"
+        android:contentDescription="@string/diceTwo"
+        app:layout_constraintBottom_toTopOf="@+id/rollText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/dice_2" />
+
+    <Button
+        android:id="@+id/hintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:text="@string/hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/successfulRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="successfulRoll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
